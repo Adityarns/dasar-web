@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM INPUTAN</title>
+  </head>
+  <body>
+    <div>
+      Form Method GET
+      <form action="/cari_produk" method="get">
+        <label for="keyword">Kata kunci</label>
+        <input type="text" id="keyword" name="q" placeholder="ipul" />
+        <input type="submit" value="cari" />
+      </form>
+      <br />
+      Form Method Post
+      <form action="/proses_login" method="post">
+        <label for="username">Username: </label>
+        <input type="text" name="user" id="username" />
+        <br />
+        <label for="password">Password: </label>
+        <input type="password" name="pwd" id="password" />
+        <input type="submit" value="login" />
+      </form>
+    </div>
+  </body>
+</html>
