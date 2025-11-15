@@ -1,0 +1,10 @@
+.gambar {
+  width: 10%;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+h2 {
+  color: aqua;
+}
