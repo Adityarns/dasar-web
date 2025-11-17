@@ -24,7 +24,7 @@ header.navbar-container {
 }
 
 header.navbar-container .logo img {
-  width: 200px;
+  width: 150px;
 }
 
 header.navbar-container .nav-list ul {
@@ -51,4 +51,265 @@ header.navbar-container .nav-list li a {
 header.navbar-container .nav-list li:hover a {
   background-color: #468dd8;
   color: white;
+}
+
+main {
+  flex: 1;
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main .content .content-description {
+  flex: 1 1;
+}
+main .content .content-description .content-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #468dd8;
+  font-weight: bold;
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+main .content .content-description p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+main .content .content-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: #468dd8;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+main .content .content-description button:hover {
+  border: 3px solid #468dd8;
+  background-color: transparent;
+  color: #468dd8;
+}
+main .content .content-image {
+  flex: 1;
+  display: flex;
+}
+main .content .content-image img {
+  width: 400px;
+  min-width: 250px;
+  margin: auto;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #468dd8;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+main aside .social-media li a:hover {
+  color: #89b0d9;
+}
+
+.menu-container {
+  display: flex; /* Mengaktifkan Flexbox untuk tata letak kolom */
+  gap: 30px;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 6rem auto;
+}
+
+.menu-sidebar {
+  flex: 1; /* Memberi ruang yang lebih kecil (misalnya 30% dari lebar) */
+  max-width: 400px; /* Batasi lebar samping */
+  text-align: center;
+  align-content: center;
+}
+
+.menu-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-content {
+  flex: 2; /* Memberi ruang yang lebih besar untuk konten menu (misalnya 70% dari lebar) */
+}
+
+.menu-content h2 {
+  color: #2196f3;
+  margin-bottom: 25px;
+  font-size: 2em;
+  border-bottom: 3px solid #2196f3;
+  padding-bottom: 10px;
+}
+
+.schedule-list {
+  display: grid;
+  gap: 20px;
+}
+
+.schedule-item {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-left: 5px solid #2196f3; /* Aksen warna Kobo di kiri */
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.schedule-item:hover {
+  transform: translateY(-3px); /* Efek mengangkat saat di-hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-title {
+  margin-top: 0;
+  color: #000;
+  font-size: 1.1em;
+}
+
+.schedule-detail {
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.schedule-tag {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.schedule-tag.live {
+  background-color: #ff0000; /* Merah untuk Live */
+}
+
+.schedule-tag.zatsudan {
+  background-color: #ff9800; /* Oranye untuk Zatsudan */
+}
+
+.schedule-tag.video {
+  background-color: #2196f3; /* Biru untuk Video */
+}
+
+.view-more {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 10px 25px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.view-more:hover {
+  background-color: #008c99;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #468dd8;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.footer-bottom {
+  text-align: center;
+  align-items: center;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+
+  main .content .content-image {
+    order: -1;
+  }
+  .menu-container {
+    flex-direction: column; /* Tumpuk kolom di layar kecil */
+  }
+
+  .menu-sidebar {
+    max-width: 100%;
+    order: -1; /* Pindahkan gambar ke atas konten */
+  }
+
+  .menu-content h2 {
+    text-align: center;
+  }
 }
