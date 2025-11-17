@@ -150,7 +150,7 @@ main aside .social-media li a:hover {
 }
 
 .menu-container {
-  display: flex; /* Mengaktifkan Flexbox untuk tata letak kolom */
+  display: flex;
   gap: 30px;
   padding: 50px 20px;
   max-width: 1200px;
@@ -158,8 +158,8 @@ main aside .social-media li a:hover {
 }
 
 .menu-sidebar {
-  flex: 1; /* Memberi ruang yang lebih kecil (misalnya 30% dari lebar) */
-  max-width: 400px; /* Batasi lebar samping */
+  flex: 1;
+  max-width: 400px;
   text-align: center;
   align-content: center;
 }
@@ -172,7 +172,7 @@ main aside .social-media li a:hover {
 }
 
 .menu-content {
-  flex: 2; /* Memberi ruang yang lebih besar untuk konten menu (misalnya 70% dari lebar) */
+  flex: 2;
 }
 
 .menu-content h2 {
@@ -191,7 +191,7 @@ main aside .social-media li a:hover {
 .schedule-item {
   background-color: #f7f7f7;
   border: 1px solid #ddd;
-  border-left: 5px solid #2196f3; /* Aksen warna Kobo di kiri */
+  border-left: 5px solid #2196f3;
   padding: 15px;
   border-radius: 8px;
   position: relative;
@@ -199,7 +199,7 @@ main aside .social-media li a:hover {
 }
 
 .schedule-item:hover {
-  transform: translateY(-3px); /* Efek mengangkat saat di-hover */
+  transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -226,15 +226,15 @@ main aside .social-media li a:hover {
 }
 
 .schedule-tag.live {
-  background-color: #ff0000; /* Merah untuk Live */
+  background-color: #ff0000;
 }
 
 .schedule-tag.zatsudan {
-  background-color: #ff9800; /* Oranye untuk Zatsudan */
+  background-color: #ff9800;
 }
 
 .schedule-tag.video {
-  background-color: #2196f3; /* Biru untuk Video */
+  background-color: #2196f3;
 }
 
 .view-more {
@@ -301,12 +301,12 @@ footer {
     order: -1;
   }
   .menu-container {
-    flex-direction: column; /* Tumpuk kolom di layar kecil */
+    flex-direction: column;
   }
 
   .menu-sidebar {
     max-width: 100%;
-    order: -1; /* Pindahkan gambar ke atas konten */
+    order: -1;
   }
 
   .menu-content h2 {
